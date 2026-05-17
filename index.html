@@ -1,306 +1,381 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Angeline Office | B2B Sales Infrastructure for Austin Hemp Brands</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angeline Office | Revenue Architecture for Founder-Led Companies</title>
     <meta
       name="description"
-      content="Angeline Office helps Austin hemp vendors build wholesale sales channels, train reps, open accounts, and scale sell-through without touching product, inventory, or fulfillment."
-    />
-    <meta property="og:title" content="Angeline Office | B2B Sales Infrastructure for Austin Hemp Brands" />
-    <meta
-      property="og:description"
-      content="White-collar sales infrastructure for Austin hemp brands. We build accounts. Vendors fulfill the product."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://angelineoffice.com" />
-    <meta property="og:image" content="/assets/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Angeline Office | B2B Sales Infrastructure for Austin Hemp Brands" />
-    <meta
-      name="twitter:description"
-      content="Angeline Office helps vendors find, train, and scale wholesale sales channels without touching inventory, fulfillment, or product delivery."
-    />
-    <meta name="twitter:image" content="/assets/og-image.png" />
-    <link rel="canonical" href="https://angelineoffice.com" />
-    <!-- Add /assets/favicon.ico when ready -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
+      content="Angeline Office helps founder-led companies diagnose sales plateaus, customer experience breakdowns, and revenue friction, then design practical systems for growth."
+    >
+    <link rel="canonical" href="https://angelineoffice.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://angelineoffice.com/">
+    <meta property="og:title" content="Angeline Office - Revenue Architecture">
+    <meta property="og:description" content="Find where customer experience is leaking revenue.">
+    <meta property="og:image" content="https://angelineoffice.com/assets/angeline-office-logo.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Angeline Office - Revenue Architecture">
+    <meta name="twitter:description" content="Find where customer experience is leaking revenue.">
+    <link rel="icon" href="assets/angeline-office-logo.jpeg" type="image/jpeg">
+    <link rel="preload" href="assets/angeline-office-logo.jpeg" as="image" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a href="#top" class="brand" aria-label="Angeline Office home">
-          <span class="brand-mark">ANGELINE OFFICE</span>
-          <span class="brand-sub">B2B Channel Growth</span>
+    <header class="site-header" aria-label="Site header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Angeline Office home">
+          <img src="assets/angeline-office-logo.jpeg" alt="Angeline Office seal" width="44" height="44">
+          <span>Angeline Office</span>
         </a>
 
-        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
-          Menu
-        </button>
-
-        <nav id="site-nav" class="site-nav" aria-label="Primary">
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
-          <a href="#standards">Standards</a>
-          <a href="#apply">Apply</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#diagnostic">Diagnostic</a>
+          <a href="#method">Method</a>
+          <a href="#fit">Fit</a>
           <a href="#contact">Contact</a>
-          <a class="btn btn-primary nav-cta" href="#contact">Build My Austin Sales Channel</a>
         </nav>
+
+        <a class="header-cta" href="#diagnostic-form">Request a Diagnostic</a>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">Austin, Texas · Founder-led B2B representation</p>
-            <h1>White-collar sales infrastructure for Austin hemp brands.</h1>
-            <p class="lead">
-              Angeline Office helps vendors find, train, and scale wholesale sales channels
-              without touching inventory, fulfillment, or product delivery.
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Revenue architecture for founder-led companies.</p>
+            <h1 id="hero-title">Find where customer experience is leaking revenue.</h1>
+            <p class="hero-lede">
+              When sales stall, pipeline quality drops, or growth gets harder to explain,
+              Angeline Office identifies where the customer journey, sales process, offer,
+              or handoffs are leaking revenue, then designs a practical plan leadership can execute.
             </p>
-            <p class="support-line">We build accounts. Vendors fulfill the product.</p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#contact">Build My Austin Sales Channel</a>
-              <a class="btn btn-secondary" href="#apply">Apply to Be Represented</a>
+
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#diagnostic-form">Request a Revenue Diagnostic</a>
+              <a class="button button-secondary" href="#method">See how it works</a>
             </div>
+
+            <p class="trust-line">Confidential diagnostic. Limited client roster. Founder-led engagements.</p>
           </div>
-          <aside class="hero-panel" aria-label="Operating focus">
-            <p class="panel-label">Office Standard</p>
-            <h2>Field sales without inventory handling.</h2>
-            <ul>
-              <li>Find Accounts</li>
-              <li>Train Reps</li>
-              <li>Scale Sell-Through</li>
-            </ul>
-            <p class="panel-note">Named for clear water. Built for clean execution.</p>
+
+          <aside class="hero-seal" aria-label="Angeline Office revenue thesis">
+            <img src="assets/angeline-office-logo.jpeg" alt="Angeline Office seal" width="220" height="220">
+            <p>Diagnose the system behind stalled growth.</p>
           </aside>
         </div>
       </section>
 
-      <section class="boundary-strip" aria-label="Compliance boundary">
-        <div class="container">
-          <p>
-            Angeline Office is a sales and marketing representation agency. We do not
-            manufacture, warehouse, transport, deliver, or take possession of regulated
-            products.
-          </p>
-          <p>Product supply, compliance, delivery, and fulfillment remain with the vendor.</p>
+      <section class="section problem-section" aria-labelledby="problem-title">
+        <div class="shell two-column">
+          <div>
+            <p class="eyebrow">The hidden pattern</p>
+            <h2 id="problem-title">When growth slows, the problem is rarely one thing.</h2>
+          </div>
+          <div class="section-copy">
+            <p>
+              Founders often feel revenue friction before dashboards prove it. The symptoms
+              may look like sales problems, but the root cause may sit earlier or later in the
+              customer journey: messaging, offer clarity, handoffs, trust gaps, onboarding,
+              or the operating rhythm around revenue.
+            </p>
+            <p>
+              Angeline Office identifies the system-level pattern so leadership can stop
+              debating symptoms and start sequencing the right repairs.
+            </p>
+          </div>
+        </div>
+
+        <div class="shell symptom-grid" aria-label="Common revenue symptoms">
+          <div class="symptom-card">Sales activity is up, but revenue is flat</div>
+          <div class="symptom-card">Leads are coming in, but quality feels wrong</div>
+          <div class="symptom-card">Prospects understand the product too late</div>
+          <div class="symptom-card">Deals stall without clear objections</div>
+          <div class="symptom-card">Customers buy once but do not return</div>
+          <div class="symptom-card">Teams debate symptoms instead of fixing root causes</div>
         </div>
       </section>
 
-      <section class="section" id="who-we-serve">
-        <div class="container">
-          <p class="eyebrow">Who we serve</p>
-          <h2>Built for vendors who need cleaner growth.</h2>
-          <div class="card-grid four-up">
-            <article class="card">
-              <h3>Austin hemp and THCa brands</h3>
-              <p>Wholesale account growth with stronger buyer relationships and clean follow-up.</p>
-            </article>
-            <article class="card">
-              <h3>Vendors entering Austin</h3>
-              <p>Market-entry support with route logic, retail outreach, and local account mapping.</p>
-            </article>
-            <article class="card">
-              <h3>Premium CPG and lifestyle brands</h3>
-              <p>Channel-building support for founders who need disciplined field execution.</p>
-            </article>
-            <article class="card">
-              <h3>Retailers seeking stronger support</h3>
-              <p>Better education, in-store alignment, and vendor coordination after onboarding.</p>
-            </article>
+      <section class="section thesis-section" aria-labelledby="thesis-title">
+        <div class="shell thesis-panel">
+          <div>
+            <p class="eyebrow">The operating thesis</p>
+            <h2 id="thesis-title">Customer experience is the revenue system customers actually feel.</h2>
+          </div>
+          <div class="section-copy">
+            <p>
+              Customer experience here does not mean support surveys. It means the full path
+              from first impression to repeat purchase: ad, landing page, offer, sales
+              conversation, proposal, onboarding, delivery, support, renewal, and referral.
+            </p>
+            <p class="strong-copy">
+              Every unnecessary step, unclear promise, slow handoff, mismatched expectation,
+              or trust gap leaks revenue.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section section-accent" id="pillars">
-        <div class="container">
-          <p class="eyebrow">Three pillars</p>
-          <h2>Find accounts. Train reps. Scale sell-through.</h2>
-          <div class="card-grid three-up">
-            <article class="card">
-              <h3>Find Accounts</h3>
-              <p>
-                Prospecting, buyer outreach, account mapping, route planning, and relationship
-                development for wholesale growth.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Train Reps</h3>
-              <p>
-                Rep onboarding, scripts, SOPs, training materials, field standards, and
-                accountability systems.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Scale Sell-Through</h3>
-              <p>
-                In-store merchandising, retail staff education, live events, follow-up loops, and
-                sell-through campaigns.
-              </p>
-            </article>
+      <section class="section offer-section" id="diagnostic" aria-labelledby="diagnostic-title">
+        <div class="shell offer-layout">
+          <div class="offer-intro">
+            <p class="eyebrow">Primary engagement</p>
+            <h2 id="diagnostic-title">The Revenue Diagnostic</h2>
+            <p>
+              A focused engagement that reviews the revenue system as customers experience it
+              and shows where clarity, trust, conversion, or operating discipline is breaking down.
+            </p>
+            <p>
+              The goal is not a giant deck. The goal is clarity, sequencing, and a practical
+              plan the team can actually execute.
+            </p>
           </div>
-          <div class="center-cta">
-            <a class="btn btn-primary" href="#contact">Build My Austin Sales Channel</a>
+
+          <div class="deliverables" aria-label="Revenue Diagnostic deliverables">
+            <div class="deliverable-card">
+              <h3>Founder signal</h3>
+              <p>Leadership interview, pressure points, constraints, and the moment growth began to feel harder.</p>
+            </div>
+            <div class="deliverable-card">
+              <h3>Journey review</h3>
+              <p>Customer path, offer clarity, sales process, follow-up, onboarding, and handoff quality.</p>
+            </div>
+            <div class="deliverable-card">
+              <h3>Pipeline truth</h3>
+              <p>CRM reality, stage definitions, bottlenecks, conversion friction, and quality of opportunity flow.</p>
+            </div>
+            <div class="deliverable-card">
+              <h3>Architecture plan</h3>
+              <p>Priority bottlenecks, ownership, cadence, and a practical 30/60/90-day revenue repair sequence.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="services">
-        <div class="container">
-          <p class="eyebrow">Services</p>
-          <h2>Services</h2>
-          <div class="card-grid two-up">
-            <article class="card">
-              <h3>B2B Channel Growth</h3>
-              <ul>
-                <li>Wholesale account prospecting</li><li>Retail buyer outreach</li><li>Vendor introductions</li><li>Account mapping</li><li>Route planning</li><li>Follow-up systems</li><li>Austin market launch support</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Field Marketing</h3>
-              <ul>
-                <li>In-store merchandising</li><li>Retail staff continuing education</li><li>Live event support</li><li>Demo-day coordination</li><li>Sell-through campaigns</li><li>Retail feedback loops</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Sales Infrastructure</h3>
-              <ul>
-                <li>Rep onboarding</li><li>SOPs</li><li>Training materials</li><li>Sales scripts</li><li>Account scorecards</li><li>CRM and pipeline hygiene</li><li>Field reporting standards</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Vendor Growth Support</h3>
-              <ul>
-                <li>Offer refinement</li><li>Brand positioning feedback</li><li>Retailer feedback loops</li><li>Pricing and wholesale structure review</li><li>Sales process design</li>
-              </ul>
-            </article>
+      <section class="section method-section" id="method" aria-labelledby="method-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Method</p>
+            <h2 id="method-title">How Angeline Office works</h2>
           </div>
-        </div>
-      </section>
 
-      <section class="section" id="process">
-        <div class="container">
-          <p class="eyebrow">Process</p>
-          <h2>Process</h2>
-          <ol class="process-list">
-            <li><h3>01. Map the market</h3><p>Identify target retailers, buyers, account tiers, territories, and route logic.</p></li>
-            <li><h3>02. Build the offer</h3><p>Clarify pricing, samples, education materials, fulfillment boundaries, and sales talking points.</p></li>
-            <li><h3>03. Open accounts</h3><p>Conduct outreach, manage follow-up, coordinate buyer conversations, and create sales opportunities.</p></li>
-            <li><h3>04. Train the field</h3><p>Create scripts, SOPs, training materials, merchandising standards, and rep accountability systems.</p></li>
-            <li><h3>05. Improve sell-through</h3><p>Support retail staff education, live events, in-store merchandising, reorder loops, and account feedback.</p></li>
-            <li><h3>06. Scale what works</h3><p>Turn early wins into repeatable systems across reps, accounts, routes, and territories.</p></li>
+          <ol class="step-list">
+            <li class="step-card">
+              <span class="step-number">01</span>
+              <h3>Observe</h3>
+              <p>Review the lived customer journey, sales motion, pipeline, messaging, and operating rhythm.</p>
+            </li>
+            <li class="step-card">
+              <span class="step-number">02</span>
+              <h3>Diagnose</h3>
+              <p>Identify the bottlenecks, trust gaps, handoff failures, and friction points leaking revenue.</p>
+            </li>
+            <li class="step-card">
+              <span class="step-number">03</span>
+              <h3>Architect</h3>
+              <p>Design the practical revenue architecture: offer, process, messaging, ownership, cadence, and next actions.</p>
+            </li>
+            <li class="step-card">
+              <span class="step-number">04</span>
+              <h3>Deploy</h3>
+              <p>Support leadership part-time as the plan moves from diagnosis into execution.</p>
+            </li>
           </ol>
         </div>
       </section>
 
-      <section class="section section-accent" id="standards">
-        <div class="container stack-md">
-          <p class="eyebrow">Why this matters</p>
-          <h2>Austin hemp is growing fast. The sales systems are not.</h2>
-          <p>Most vendors do not lose because the product is bad. They lose because the sales system is loose.</p>
-          <p>Buyers need professionalism, not chaos. Retailers need support after onboarding. Reps need scripts, route discipline, and accountability. The market rewards trust, consistency, education, and clean execution.</p>
+      <section class="section fit-section" id="fit" aria-labelledby="fit-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Fit</p>
+            <h2 id="fit-title">Built for founder-led companies at an inflection point.</h2>
+          </div>
 
-          <div class="standard-card">
-            <h3>Founder-led. System-driven.</h3>
-            <p>
-              Angeline Office is built for vendors who want senior-level sales thinking, clean
-              operating procedures, and field execution without building an internal sales
-              department from scratch.
-            </p>
-            <p>
-              White-collar operational discipline. Southern hospitality. Better retail
-              relationships. Calm execution.
-            </p>
+          <div class="fit-grid">
+            <section class="fit-card" aria-labelledby="good-fit-title">
+              <h3 id="good-fit-title">Strong fit</h3>
+              <ul class="check-list">
+                <li>Founder-led company with real traction but stalled growth</li>
+                <li>Premium product or service with an unclear sales motion</li>
+                <li>Team knows something is wrong but cannot isolate the cause</li>
+                <li>Leadership wants candid diagnosis, not agency theater</li>
+                <li>Business values trust, customer experience, and long-term brand equity</li>
+              </ul>
+            </section>
+
+            <section class="fit-card quiet-card" aria-labelledby="not-fit-title">
+              <h3 id="not-fit-title">Probably not the right engagement</h3>
+              <ul class="check-list muted-list">
+                <li>You want a cold-call boiler room</li>
+                <li>You only want ad management</li>
+                <li>You are looking for a generic sales trainer</li>
+                <li>You do not want to examine the actual customer experience</li>
+                <li>You want more activity before more clarity</li>
+              </ul>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="section" id="apply">
-        <div class="container">
-          <p class="eyebrow">Application</p>
-          <h2>Apply to be represented.</h2>
-          <p class="lead-inline">Angeline Office works best with vendors who can fulfill cleanly, communicate clearly, and support retail accounts after the sale.</p>
-          <div class="apply-grid">
-            <article class="card">
-              <h3>Good fit</h3>
-              <ul>
-                <li>You have compliant product documentation.</li>
-                <li>You control your own supply and fulfillment.</li>
-                <li>You want wholesale account growth.</li>
-                <li>You can support reorders and retail education.</li>
-                <li>You value clean systems and professional follow-up.</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Not a fit</h3>
-              <ul>
-                <li>You need someone to store or deliver product.</li>
-                <li>You cannot provide basic product documentation.</li>
-                <li>You want hype without operating discipline.</li>
-                <li>You are not ready to support retail accounts after opening them.</li>
-              </ul>
-            </article>
-          </div>
-
-          <form class="application-form" action="mailto:hello@angelineoffice.com" method="post" enctype="text/plain">
-            <p class="form-note">Static site note: this mailto form opens your email client. Later, replace the form action with Formspree, Tally, Basin, or Netlify Forms.</p>
-            <div class="form-grid">
-              <label>Name<input name="Name" type="text" required /></label>
-              <label>Company<input name="Company" type="text" required /></label>
-              <label>Email<input name="Email" type="email" required /></label>
-              <label>Website<input name="Website" type="url" placeholder="https://" /></label>
-              <label>Product category<input name="Product Category" type="text" /></label>
-              <label>Current Austin presence<input name="Current Austin Presence" type="text" /></label>
-              <label class="full">What do you need help with?<textarea name="Help Needed" rows="4"></textarea></label>
-              <label class="full">Are you able to handle fulfillment and delivery directly?<textarea name="Fulfillment Capacity" rows="3"></textarea></label>
-            </div>
-            <button class="btn btn-secondary" type="submit">Apply to Be Represented</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="section section-final" id="contact">
-        <div class="container final-grid">
+      <section class="section operating-section" aria-labelledby="limited-title">
+        <div class="shell two-column">
           <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Build your Austin sales channel.</h2>
-            <p>If you have the product and fulfillment handled, Angeline Office can help build the account engine around it.</p>
-            <a class="btn btn-primary" href="mailto:hello@angelineoffice.com?subject=Build%20My%20Austin%20Sales%20Channel">Build My Austin Sales Channel</a>
+            <p class="eyebrow">Operating model</p>
+            <h2 id="limited-title">Limited by design.</h2>
           </div>
-          <aside class="contact-card">
-            <h3>Angeline Office</h3>
-            <p>Austin, Texas</p>
-            <p>B2B Channel Growth</p>
-            <p><a href="mailto:hello@angelineoffice.com">hello@angelineoffice.com</a></p>
-          </aside>
+          <div class="section-copy">
+            <p>
+              Angeline Office works with a small number of clients at a time so each
+              engagement receives direct founder-level attention.
+            </p>
+            <p>
+              Intake is selective, confidential, and intentionally focused. If there is not a fit,
+              you will be told directly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section founder-section" aria-labelledby="founder-title">
+        <div class="shell founder-note">
+          <p class="eyebrow">Founder note</p>
+          <h2 id="founder-title">Pattern recognition across revenue, operations, and customer-facing systems.</h2>
+          <p>
+            Angeline Office is led by Drew Cleaver, an inventor, founder, and revenue strategist
+            with experience across consumer products, Amazon FBA, B2B sales, founder-led
+            operations, and customer-facing systems. The practice is built around finding where
+            the customer journey, sales motion, and operating model stop supporting one another.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Confidential inquiry</p>
+            <h2 id="contact-title">Start with the signal.</h2>
+            <p>
+              If revenue feels harder than it should, send a few details. You do not need
+              to have the problem perfectly defined. That is the work.
+            </p>
+            <ul class="assurance-list" aria-label="Inquiry assurances">
+              <li>No newsletter.</li>
+              <li>No automated pitch sequence.</li>
+              <li>If there is not a fit, I will say so directly.</li>
+            </ul>
+          </div>
+
+          <form
+            id="diagnostic-form"
+            class="diagnostic-form"
+            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            method="POST"
+            aria-labelledby="contact-title"
+          >
+            <input type="hidden" name="_subject" value="Revenue Diagnostic inquiry">
+            <input type="hidden" name="_next" value="https://angelineoffice.com/#received">
+
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="form-row">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization" required>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-row">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="url" autocomplete="url" placeholder="https://">
+            </div>
+
+            <div class="form-row">
+              <label for="stage">Approximate revenue stage <span class="optional-note">(optional)</span></label>
+              <select id="stage" name="revenue_stage">
+                <option value="">Select one if useful</option>
+                <option>Under $1M</option>
+                <option>$1M to $3M</option>
+                <option>$3M to $10M</option>
+                <option>$10M to $20M</option>
+                <option>$20M+</option>
+                <option>Prefer to discuss privately</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="changed">What changed most?</label>
+              <select id="changed" name="primary_issue" required>
+                <option value="">Select the strongest signal</option>
+                <option>Sales plateau</option>
+                <option>Pipeline quality</option>
+                <option>Conversion</option>
+                <option>Retention</option>
+                <option>CX / handoffs</option>
+                <option>Positioning / offer clarity</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="noticing">What are you noticing?</label>
+              <textarea
+                id="noticing"
+                name="noticing"
+                rows="4"
+                maxlength="600"
+                placeholder="One or two sentences is enough."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <label for="urgency">How urgent is this? <span class="optional-note">(optional)</span></label>
+              <select id="urgency" name="urgency">
+                <option value="">Select one if useful</option>
+                <option>Exploring</option>
+                <option>This quarter</option>
+                <option>Now / urgent</option>
+              </select>
+            </div>
+
+            <button class="button button-primary form-button" type="submit">
+              Request a confidential diagnostic
+            </button>
+
+            <p class="form-footnote">Confidential inquiry. You do not need to have the problem fully defined.</p>
+            <p class="form-success" id="received" tabindex="-1" hidden>
+              Received. If there appears to be a fit, I will reply with the simplest next step.
+            </p>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p class="footer-brand">ANGELINE OFFICE · B2B Channel Growth · Austin, Texas</p>
-        <p>© <span id="year"></span> Angeline Office. All rights reserved.</p>
-        <p class="disclaimer">
-          Angeline Office provides sales and marketing representation services. Angeline Office does
-          not manufacture, warehouse, transport, deliver, or take possession of hemp, THCa,
-          cannabis, regulated products, or client inventory. Product compliance, supply, delivery,
-          and fulfillment remain the responsibility of the vendor.
-        </p>
-        <p class="legal-note">Angeline Office is a DBA. Legal entity details available upon request.</p>
+      <div class="shell footer-inner">
+        <div>
+          <a class="footer-brand" href="#top">Angeline Office</a>
+          <p>Private revenue architecture for founder-led companies.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:drew@angelineoffice.com">drew@angelineoffice.com</a>
+          <span aria-hidden="true">/</span>
+          <a href="#diagnostic-form">Request a Diagnostic</a>
+        </div>
+        <p class="copyright">&copy; <span id="year">2026</span> Angeline Office. All rights reserved.</p>
       </div>
     </footer>
+
+    <a class="mobile-action is-hidden" href="#diagnostic-form">Request Diagnostic</a>
+    <script src="script.js" defer></script>
   </body>
 </html>
